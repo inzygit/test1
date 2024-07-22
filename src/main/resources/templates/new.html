@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>New Bucket List Form</title>
+	</head>
+	<body>
+		<h1>Bucket List Management</h1>
+		<mark>Save</mark>
+		<hr/>
+		<form action="#" th:action="@{/saveLists}" th:object="${BucketList1}" method="POST">
+			
+			<input type="text" th:field="*{wish}" placeholder="wish"/>
+			
+			<input type="text" th:field="*{status}" placeholder="status"/>
+			
+			<button type="submit">Submit</button>
+			
+		</form>
+	</body>
+</html>
